@@ -1,0 +1,82 @@
+.avue-detail {
+  width:100%;
+  width:100%;
+  padding-top: 20px;
+  &__group {
+    // padding-left: 20px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: auto;
+    overflow-x: hidden;
+    .group-content{
+      flex: 1 auto;
+      width: 100%;
+    }
+  }
+  &__box {
+    width: 200px;
+    margin: 10px;
+    // margin-left: 20px;
+    // margin-bottom: 10px !important;
+    // margin-top: 10px !important;
+  }
+  &__item--inline{
+    width: 100%;
+  }
+  @for $i from 2 through 12 {
+    &__item--#{$i} {
+        width: (200px * $i +20px * $i)-20px ;
+    }
+  }
+  // &__box {
+  //     min-height: 22px;
+  //     line-height: 22px;
+  //     font-size: 14px;
+  //     box-sizing: border-box;
+  //     padding: 0px 10px;
+  //     margin-bottom: 20px;
+  // }
+  &__line{
+    display: inline-block;
+    height: 50px;
+  }
+  &__label {
+      margin-right: 10px;
+      min-width: 80px;
+      display: inline-block;
+      color: #888;
+      &--center {
+          text-align: center;
+      }
+      &--left {
+          text-align: left;
+      }
+      &--right {
+          text-align: right;
+      }
+  }
+  &__content {
+      line-height: 22px;
+      width: 100%;
+      margin-left: 10px;
+      display: contents;
+      word-break: break-all;
+  }
+  .form-dividingline {
+    height: 1px;
+    width: 110%;
+    margin: 10px -30px;
+  }
+  .dialog-line{
+    width: 105%;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}

@@ -1,0 +1,18 @@
+.avue-select {
+  .el-input__prefix{
+    width: 25px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .remote-mod {
+    .el-select__tags {
+      padding-left: 22px;
+    }
+    .el-input__prefix{
+      left: 3px;
+    }
+    .el-input__suffix{
+      right: 3px;
+    }
+  }
+}

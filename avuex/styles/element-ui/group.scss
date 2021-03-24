@@ -1,0 +1,76 @@
+.avue-group{
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  // &:first-child:not(:last-child){
+  //   border-bottom: none;
+  // }
+  &~div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &.avue-group--simple {
+    border: none;
+  }
+  &--card{
+    padding: 0 20px;
+    &:last-child{
+      margin-bottom: 50px;
+    }
+    .avue-group__item{
+      border-radius: 5px;
+      box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+  &__item {
+    // padding-bottom: 20px;
+    // padding: 0 10px 0 10px;
+    // background-color: #fff;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px;
+    box-sizing: border-box;
+    &:last-child {
+        border-bottom: none;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    // margin-bottom: 20px;
+    position: relative;
+    user-select: none;
+    &::before{
+      content: "|";
+      position: absolute;
+      left: -2px;
+      font-size: 13px;
+      color: #666;
+      top: -1px;
+    }
+    .state{
+      position: absolute;
+      right: 20px;
+      transition: all 0.2s;
+    }
+    .close{
+      transform: rotate(-90deg);
+    }
+}
+  &__icon {
+      margin-right: 8px;
+      font-size: 18px;
+      color: #999;
+  }
+  &__title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #666;
+      margin: 0;
+      padding: 0;
+  }
+}

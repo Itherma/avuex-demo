@@ -1,0 +1,27 @@
+.avue-date {
+  // width: 414px;
+  .el-input__inner {
+    border-color:#c0c4cc;
+  }
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+  &__radio {
+    .el-radio-button:last-child .el-radio-button__inner {
+      border-radius: 0;
+      border-right: 0;
+    }
+  }
+  &__date {
+    width: 300px;
+    .el-date-editor {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+  .el-range-editor--small{
+    height: 32px;
+    line-height: 32px;
+  }
+}
